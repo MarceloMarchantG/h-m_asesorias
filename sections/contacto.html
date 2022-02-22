@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Enriqueta&family=Libre+Baskerville&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <title>H&M Asesorías Contables</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo" >
+            <a href="../index.html"><img src="../img/logotr.png" alt=""></a>
+        </div>
+        <div class="header__name">
+            <h1>H&M Asesorías Contables</h1>
+        </div>
+    </header>
+    <nav>      
+        <ul class="nav__list">
+            <li class="nav__list-item"><a href="../index.html">Inicio</a></li>            
+            <li class="nav__list-item"><a href="servicios.html">Servicios</a></li>
+            <li class="nav__list-item"><a href="planes.html">Planes</a></li>
+            <li class="nav__list-item"><a href="nosotros.html">Nosotros</a></li>
+            <li class="nav__list-item"><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>  
+    
+    <section class="section">
+        <h2>Comunícate con nosotros</h2>
+        <p>Si quieres contactarnos por nuestros servicios o tienes alguna consulta, llena el formulario adjunto y estaremos felices de responder a la brevedad.</p>
+        <div>    
+            <form class="formulario" action="">
+                <label for="nombre">Nombre * 
+                    <input type="text" name="nombre" placeholder="Nombre">                       
+                </label>
+                <label for="apellido">Apellido * 
+                    <input type="text" name="apellido" placeholder="Apellido">                       
+                </label>
+                <label for="mail">Mail * 
+                    <input type="mail" name="mail" placeholder="nombre@ejemplo.com">
+                </label>
+                <label for="telefono">Teléfono * 
+                    <input type="text" name="telefono" placeholder="+xx x xxxx xxxx">
+                </label>
+                <label for="mensaje">Mensaje * 
+                    <textarea name="mensaje" placeholder="" rows="5" cols="20"></textarea>
+                </label>
+                <p>Como prefieres que te contactemos?</p>
+                <div class="ert">
+                    <label for="cont-mail">
+                        <input type="radio" name="mail-telefono" id="cont-mail">Mail
+                    </label>
+                    <label for="cont-fono">
+                    <input type="radio" name="mail-telefono" id="cont-fono">Teléfono
+                    </label>
+                </div>  
+                <button type="submit">ENVIAR</button>
+            </form>
+        </div>
+        <div>
+
+        </div>
+
+    </section>
+    <footer class="footer">
+        <div class="foot__container">
+            <div class="foot__col1">
+                <h3>Contáctanos</h3>
+                <p>Fono: +56 9 9222 4295</p>
+                <p>Email: contacto@hymcontabilidad.com</p>
+
+            </div>
+            <div class="foot__col2">
+                <div>
+                    <h3>Horario de Atención</h3>
+                    <p>Lunes a Viernes</p>
+                    <p>09:00 a 13:00</p>
+                    <p>14:00 a 18:30</p>
+                </div>            
+                <div>
+                    <h3>Dirección</h3>
+                    <p>Av. Cristobal Colón 7696</p>
+                    <p>Las Condes - Santiago</p>           
+                </div>
+            </div>
+            <div class="foot__col3">
+                <h3>Somos Socios</h3>
+                <img src="../img/asech.png" alt="logo ASECH">
+            </div>
+        </div>
+        <div class="foot__end">
+        <P>© 2022 Servicios y Asesorías H&M Ltda. TODOS LOS DERECHOS RESERVADOS</P>
+        </div>    
+    </footer>
+    
+</body>
+</html>
