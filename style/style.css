@@ -267,6 +267,10 @@ section p{
     height: 50px;
     margin-top: 10px;
 }
+.planes input:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
 .planes li{
     text-align: justify;
     list-style-position: inside;
@@ -332,6 +336,10 @@ section p{
     margin-right: 5%;
     width: 60%;
 }
+.formulario button:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
 .formulario button{
     display: block;
     width: 50%;
@@ -387,6 +395,10 @@ section p{
     text-align: center;
     border: 1px solid white;
     background-image: url(../img/light_noise_diagonal.png);
+}
+.section__box:hover{
+    transform: scale(1.05);
+    transition: all 1s;
 }
 .section__box-list{
     height: 50%;
