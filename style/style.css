@@ -22,8 +22,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
-    height: 100px;   
+    width: 18%;
     padding: 10px 0px;
     margin-left: 0px;
 }
@@ -36,8 +35,7 @@ h2{
     justify-content: center;
     align-items: center;
     padding: 10px 0px;
-    width: 60%;
-    height: 100px;
+    width: 63%;
     text-align: center;
 }
 .header__name h1{
@@ -85,9 +83,12 @@ nav{
     text-align: center;
     background-color: rgb(139, 165, 223);
 }
+.nav__list{
+    padding-left: 0%;
+}
 .nav__list-item{
     display: inline-block;
-    height: 25px;
+    height: 32px;
     width: 10%;
     padding: 5px 10px;
     background-color: rgb(114, 150, 226);        
@@ -104,7 +105,7 @@ nav{
 
 @media only screen and (max-width: 780px){/*diseño para tablet*/
     .nav__list-item{
-        height: 25px;
+    
         width: 15%
     }
 }
@@ -117,6 +118,10 @@ nav{
         height: 100%;
         
     }
+    .nav__list{
+        margin-bottom: 0%;      
+    }
+    
     nav{
         height: 100%;
         width: 100%;
@@ -128,12 +133,6 @@ nav{
 /*Section de uso común*/
 .section{
     background-color: #dfdfdf;
-    width: 70%;
-    height: 100%;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 0;
-    min-height: 600px;
 }
 .section__img{
     text-align: center;
@@ -191,13 +190,16 @@ section p{
 .section__list li{
     list-style: none;
 }
+.section__list ol{
+    padding-left: 0px;
+}
 
 @media only screen and (max-width: 780px){/*diseño para tablet*/
     .section{
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
-    }
+    } 
     .section__list{
         width: 80%;
         margin: 0 auto;
@@ -309,56 +311,39 @@ section p{
 
 
 /*Formulario página Contacto*/
-
+.prueba{
+    background-color: #9acef8;
+    height: auto;
+}
 .formulario{
-    max-width: 600px;
-    /*width: 50%;*/
+    justify-items: center;
     height: 95%;
-    margin: 20px auto;
+    margin: 20px 20px 0px 20px;
     background-color: #8ccce8;
     padding: 10px 5px;
     border-radius: 5px;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     border: 1px solid white;
 }
-.formulario label{
-    display: block;
-    margin-right: 0;
-    padding: 5px;
-    text-align: right;
-}
+
 .formulario p{
     text-align: center;
 }
-.formulario input, textarea{
-    padding: 5px;
-    display: inline;
-    margin-right: 5%;
-    width: 60%;
+.col-form-label{
+    margin-left: 10px;
 }
-.formulario button:hover{
-    transform: scale(1.05);
-    transition: all 0.5s;
+.btn{
+    color: rgb(0, 0, 0);
+    background-color: rgb(211, 211, 211);
+    border-color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
-.formulario button{
-    display: block;
-    width: 50%;
-    height: 30px;
-    padding: 5px;
-    margin-left: 25%;
-    margin-top: 20px;
+.btn:hover{
+    transform: scale(1.1);
+    transition: all 0.25s;
 }
-.ert label{
-    display: inline;
-    text-align: center;
-    margin: 10px auto;
-    padding: 5px;
-    }
-.ert input{
-    display: inline;
-    margin-left: 20%;
-    width: 20px;
-}
+
 @media only screen and (max-width: 780px) {
     
 }
@@ -378,18 +363,19 @@ section p{
 /*section servicios*/
 .section__content{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 100%;
-    text-align: center;
 }
 .section__box{
     display: grid;
-    grid-template-rows: 1fr 0.5fr 1.5fr;
-    width: 30%;
-    min-width: 250px;
-    height: 80%;
+    grid-template-areas: 
+    "title title"
+    "img list";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 280px;
     margin: 5px;
     padding: 5px;
     text-align: center;
@@ -404,22 +390,32 @@ section p{
     height: 50%;
 }
 .section__box img{
+    grid-area: img;
     max-width: 100%;
-    width: 250px;
+    width: 350px;
     margin: 0 auto;
 }
 .section__box ul{
+    grid-area: list;
     text-align: left;
-    margin-left: 5px;
     list-style-position: inside;
+    padding-left: 1rem;
+}
+.section__box h4{
+    grid-area: title;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px;
 }
 
-@media only screen and (max-width: 780px) {/*diseño para tablet*/
+@media only screen and (max-width: 991px) {/*diseño para tablet*/
     .section__content{
-        height: 100%;    
+        height: 100%;     
     }
     .section__box{
-        width: 46%;
+        width: 90%;
         min-width: 250px;
         height: 100%;    
     }
@@ -429,6 +425,7 @@ section p{
         height: 100%;    
     }
     .section__box{
+        display: block;
         width: 90%;
         height: 100%;    
     }   
@@ -460,7 +457,7 @@ section p{
     padding: 10px;
 }
 .foot__container p{
-    padding: 3px;   
+    margin-bottom: 1px;   
 }
 .foot__col3 img{
     max-width: 100%;
