@@ -1,3 +1,4 @@
+//Estilo general 
 *{
     margin: 0;
     padding: 0;
@@ -10,26 +11,21 @@ h2{
     margin: 5px;
 }
 .section{
-    background-color: #dfdfdf;
+    background-color: $section-bg-c;
     h2{
-        padding: 20px;
-        font-family: 'Libre Baskerville', serif;
+        @include section-font-h;
         font-size: 24px;
-        font-weight: 700;
+        padding: 20px;
         margin-top: 0;
     }
     h3{
-        font-family: 'Libre Baskerville', serif;
+        @include section-font-h;
         font-size: 23px;
-        font-weight: 700;
-        text-align: center;
         padding: 15px;
     }
     h4{
-        font-family: 'Libre Baskerville', serif;
+        @include section-font-h;
         font-size: 18px;
-        font-weight: 700;
-        text-align: center;
         padding: 15px;
     }
     p{
@@ -42,6 +38,12 @@ h2{
     span{
         font-style: italic;
         font-weight: 700;
-        color: rgb(201, 20, 20);
+        color: $section-span-c;
+    }
+}
+.btn{
+    @include button;
+    &:hover{
+        @include btn-hover;
     }
 }

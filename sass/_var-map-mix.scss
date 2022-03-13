@@ -1,0 +1,46 @@
+//Variables
+$font1: 700 50px 'Merriweather', serif;
+
+
+$header-lg1: #2e54fa;
+$header-lg2: #8ba5df; //el mismo color
+$nav-bg-c: #8ba5df; //el mismo color
+$nav-list-c: #7296e2;
+$nav-hov-c: #8ba5df; //el mismo color
+$section-bg-c: #dfdfdf;
+$section-span-c: #c91414;
+$section-list-c: #f0f0f0;
+$formulario-bg-c: #8ccce8;
+$button-c: #000000;
+$button-bg-c: #d3d3d3;
+$button-bd-c: #ffffff;
+
+//Map
+$planes: (
+    png: #e8f5ff,
+    seirl: #c3e3fd,
+    sspa: #9acef8,
+    sa: #6eb8f5,
+);
+
+//Mixin
+@mixin section-font-h {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    text-align: center;
+}
+@mixin button {
+    color: $button-c;
+    background-color: $button-bg-c;
+    border-color: $button-bd-c;
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin btn-hover {
+    transform: scale(1.1);
+    transition: all 0.25s;
+}
+
+
+
+

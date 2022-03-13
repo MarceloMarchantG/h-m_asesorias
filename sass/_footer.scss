@@ -31,3 +31,25 @@
     font-size: 13px;
     padding: 10px;
 }
+@media only screen and (max-width: 780px){/*diseño para tablet*/
+    
+}
+
+@media only screen and (max-width: 480px){/*diseño para celular*/
+    .foot__container{
+            display: block;
+    }
+    .foot__contact{
+            width: 100%;
+            height: 100%;       
+    }
+    .foot__houroff{
+            width: 100%;
+            height: 100%;
+    }
+    .foot__asoc{
+            width: 100%;
+            height: 100%;        ;
+    }            
+}
+
