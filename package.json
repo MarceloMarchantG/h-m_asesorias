@@ -1,5 +1,5 @@
 {
-  "name": "proyecto",
+  "name": "proyecto_desarrollo_web_coder",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/MarceloMarchantG/h-m_asesorias.git"
   },
-  "author": "",
+  "author": "Marcelo Marchant Gangas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MarceloMarchantG/h-m_asesorias/issues"
