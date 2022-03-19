@@ -26,7 +26,7 @@
         }
     }
 }
-
+// Media queries Inicio
 @media only screen and (max-width: 780px){/*diseño para tablet*/
     .section__list{
         width: 80%;
@@ -98,27 +98,27 @@
     @extend .planes;
     background-color: map-get($map: $planes, $key: sa);
 }
-
+// Media queries Planes
 @media only screen and (max-width:780px){/*diseño para tablet*/
     .planes{
         width: 90%;
-    }
-    .planes li{
-        margin-left: 5%;
-        margin-right: 5%;
+        li{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
     }
 }
 
 @media only screen and (max-width:480px){/*diseño para celular*/
     .planes{
         width: 96%;
-    }
-    .planes li{
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .planes a{
-        height: 20px;       
+        li{
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        a{
+            height: 20px;       
+        }
     }
 }
 
@@ -142,10 +142,7 @@
     margin-left: 10px;
 }
 
-
-@media only screen and (max-width: 780px) {
-    
-}
+// Media queries Contacto
 @media only screen and (max-width: 480px) {
     .formulario label{
         display: block;    
@@ -209,8 +206,7 @@
 .servicios__list{
     height: auto;
 }
-
-
+// Media queries Servicios
 @media only screen and (max-width: 768px) {/*diseño para tablet*/
 
     .section__box{

@@ -94,15 +94,14 @@ h2 {
     width: 100%;
     height: 100%;
     padding: 10px 0px 0px 0px; }
-  .header__logo img {
-    width: 100px; }
+    .header__logo img {
+      width: 100px; }
   .header__name {
     width: 100%;
     height: 100%; }
-  .header__name h1 {
-    font-size: 1.5em; } }
+    .header__name h1 {
+      font-size: 1.5em; } }
 
-/*Empieza el menú*/
 nav {
   position: relative;
   height: 35px;
@@ -228,19 +227,19 @@ nav {
   /*diseño para tablet*/
   .planes, .planes-png, .planes-seirl, .planes-sspa, .planes-sa {
     width: 90%; }
-  .planes li, .planes-png li, .planes-seirl li, .planes-sspa li, .planes-sa li {
-    margin-left: 5%;
-    margin-right: 5%; } }
+    .planes li, .planes-png li, .planes-seirl li, .planes-sspa li, .planes-sa li {
+      margin-left: 5%;
+      margin-right: 5%; } }
 
 @media only screen and (max-width: 480px) {
   /*diseño para celular*/
   .planes, .planes-png, .planes-seirl, .planes-sspa, .planes-sa {
     width: 96%; }
-  .planes li, .planes-png li, .planes-seirl li, .planes-sspa li, .planes-sa li {
-    margin-left: 5%;
-    margin-right: 5%; }
-  .planes a, .planes-png a, .planes-seirl a, .planes-sspa a, .planes-sa a {
-    height: 20px; } }
+    .planes li, .planes-png li, .planes-seirl li, .planes-sspa li, .planes-sa li {
+      margin-left: 5%;
+      margin-right: 5%; }
+    .planes a, .planes-png a, .planes-seirl a, .planes-sspa a, .planes-sa a {
+      height: 20px; } }
 
 .formulario {
   justify-items: center;
@@ -358,9 +357,6 @@ nav {
 .foot__end {
   font-size: 13px;
   padding: 10px; }
-
-@media only screen and (max-width: 780px) {
-  /*diseño para tablet*/ }
 
 @media only screen and (max-width: 480px) {
   /*diseño para celular*/
